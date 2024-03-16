@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <!-- Required meta tags -->
@@ -11,24 +11,23 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Javascript -->
-    <script src="script.js"></script>
+    <script src="/web/script.js"></script>
 
-    <title>Python Playground</title>
+    <title>Calculator</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <h1>Hello Python Playground</h1>
+        <h1>Calculator</h1>
     </div>
     <div class="container-fluid">
         <form>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Number</label>
-                <input type="text" onkeyup="inputChanged(event);" class="form-control" id="numberInput"
-                    placeholder="Your number">
-                <label for="result">Result</label>
-                <input type="text" class="form-control" id="result"
-                    placeholder="Result" disabled>
+                <input type="text" id="number1" placeholder="0" />
+                <input type="text" id="number2" placeholder="0" />
+                <button onclick="calc('add')">Add</button>
+                <button onclick="calc('sub')">Subtract</button>                
+                <div id="result"></div>
             </div>
         </form>
     </div>
